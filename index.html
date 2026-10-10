@@ -1,0 +1,879 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#fbcada">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Sofi Love Zahro ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="hearts-background" id="heartsBackground"></div>
+
+  <header class="navbar">
+    <a href="#home" class="logo">sofi<span>&zahro.</span> ♡</a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Buka menu" aria-expanded="false">☰</button>
+
+    <nav id="navMenu">
+      <a href="#home">Beranda</a>
+      <a href="#counter">Waktu Cinta</a>
+      <a href="#story">Cerita Kita</a>
+      <a href="#moments">Pertemuan Kita</a>
+      <a href="#reasons">Tentang Kamu</a>
+      <a href="#fights">Perjalanan</a>
+      <a href="#letters">Surat Cinta</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">♡ SEBUAH WEBSITE KECIL UNTUK ZAHRO ♡</span>
+
+        <h1>Kamu adalah kisah<br>
+          <span>favoritku.</span>
+        </h1>
+
+        <p>
+          Dari dua orang yang dipertemukan kembali pada 25 Juni 2024, menjadi dua hati
+          yang saling menjaga meski terhalang jarak. Ini cerita tentang kita,
+          tentang rindu, bahagia, dan cinta yang terus kita perjuangkan bersama.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#story" class="btn btn-primary">Baca kisah kita ♡</a>
+          <button class="btn btn-outline" id="musicBtn">
+            ♫ Putar musik
+          </button>
+        </div>
+
+        <!-- HERO MINI MUSIC PLAYER CARD -->
+        <div class="hero-music-card" id="heroMusicCard">
+          <div class="music-disc-icon" id="musicDiscIcon">🎵</div>
+          <div class="music-meta">
+            <span class="music-tag">LAGU SPESIAL KITA ♡</span>
+            <strong>Sheila On 7 · Anugerah Terindah</strong>
+          </div>
+          <button class="hero-music-play-btn" id="heroMusicPlayBtn" aria-label="Putar Musik">
+            <span id="heroMusicBtnIcon">▶</span> Putar Lagu
+          </button>
+        </div>
+
+        <div class="love-info">
+          <span>DENGAN CINTA, SELALU</span>
+          <span>♡ SOFI LOVE ZAHRO ♡</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <!-- [FOTO 1: FOTO UTAMA BERDUA] Cukup ganti "foto-utama.jpg" dengan nama file fotomu -->
+          <img
+            src="foto-utama.jpeg"
+            onerror="this.onerror=null; this.src='foto-utama.jpg';"
+            alt="Foto Sofi dan Zahro">
+
+          <div class="photo-caption">
+            <span>zahro, orang favoritku</span>
+            <span>♡ selamanya di hatiku</span>
+          </div>
+        </div>
+        <div class="floating-note note-one">sofi + zahro ♡</div>
+        <div class="floating-note note-two">tempat ternyamanku ☁</div>
+        <div class="floating-note note-three">LDR tapi hati selalu dekat 📍</div>
+      </div>
+
+      <a href="#counter" class="scroll-hint">GULIR KE CERITA KITA ↓</a>
+    </section>
+
+    <!-- ROMANTIC DIVIDER 1 -->
+    <div class="romantic-divider">
+      <span class="divider-content">♡ ⋆｡˚ ❀ ˚｡⋆ ♡</span>
+    </div>
+
+    <!-- LOVE COUNTER -->
+    <section class="counter-section section-pad" id="counter">
+      <div class="section-heading">
+        <span class="eyebrow">♡ TANGGAL JADIAN: 25 JUNI 2024 · 18:26 WIB ♡</span>
+        <h2>Sudah sejauh ini <span>kita berjalan.</span></h2>
+        <p>Meskipun kita LDR terpisah jarak kilometer, setiap detik bersamamu selalu jadi cerita paling berharga.</p>
+      </div>
+
+      <div class="counter-card">
+        <div class="counter-card-header">
+          <span class="counter-stamp">✨ STAMP OF LOVE · SOFI & ZAHRO ✨</span>
+        </div>
+        <div class="counter-heart">♥</div>
+        <p class="counter-title">Kita sudah bersama & saling menjaga selama:</p>
+
+        <div class="counter-grid">
+          <div class="counter-item"><strong id="days">0</strong><span>Hari</span></div>
+          <div class="counter-item"><strong id="hours">0</strong><span>Jam</span></div>
+          <div class="counter-item"><strong id="minutes">0</strong><span>Menit</span></div>
+          <div class="counter-item"><strong id="seconds">0</strong><span>Detik</span></div>
+        </div>
+
+        <div class="counter-pills">
+          <span class="counter-pill">🗓️ Dimulai 25 Juni 2024</span>
+          <span class="counter-pill">📍 LDR Pejuang Jarak</span>
+          <span class="counter-pill">♾️ Sampai Selamanya</span>
+        </div>
+
+        <p class="counter-note">
+          "Dan sejauh apa pun jarak memisahkan kita, doa dan rasa sayang Sofi ke Zahro selalu bertambah setiap detiknya. ♡"
+        </p>
+      </div>
+    </section>
+
+    <!-- ROMANTIC DIVIDER 2 -->
+    <div class="romantic-divider">
+      <span class="divider-content">୨⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ 📖 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯୧</span>
+    </div>
+
+    <!-- OUR STORY -->
+    <section class="story-section section-pad" id="story">
+      <div class="story-wrapper">
+        <div class="section-heading">
+          <span class="eyebrow">♡ BUKU HARIAN PERJALANAN KITA ♡</span>
+          <h2>Cerita <span>kita.</span></h2>
+          <p>Bukan kisah yang sempurna, tetapi kisah yang paling berarti dalam hidupku.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-dot">♡</div>
+            <div class="timeline-card">
+              <div class="washi-tape"></div>
+            <span class="chapter">BAB 01 · AWAL CERITA</span>
+            <h3>Saat semuanya dimulai kembali</h3>
+            <p class="timeline-date">Tanggal: 25 Juni 2024, 18.26 WIB</p>
+            <p>
+              Aku benar-benar merasa menjadi orang yang beruntung karena bisa
+               kembali bersamamu. Setelah semua yang pernah kita lewati,
+                akhirnya kita diberi kesempatan untuk bersama lagi. Jujur,
+                 aku bahagia banget bisa kembali memiliki seseorang yang
+                begitu berarti dalam hidupku, yaitu kamu. Mungkin perjalanan 
+                kita nggak selalu mudah, tapi aku bersyukur karena cerita kita 
+                belum berakhir. Kali ini, aku ingin lebih menghargai 
+                kehadiranmu, menjaga hubungan kita, dan memperbaiki apa yang 
+                pernah salah. Aku nggak tahu bagaimana perjalanan kita ke 
+                depannya, tapi aku berharap kita bisa terus bersama, 
+                saling memahami, dan nggak mudah menyerah satu sama lain. 
+                Terima kasih karena sudah kembali menjadi bagian dari hidupku. 
+                Aku beruntung banget bisa balikan sama kamu, dan semoga kali 
+                ini kita bisa menjaga satu sama lain lebih baik dari sebelumnya. ❤️
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot">♡</div>
+          <div class="timeline-card">
+            <div class="washi-tape"></div>
+            <span class="chapter">BAB 02 · JATUH CINTA</span>
+            <h3>Kamu menjadi rumah ternyamanku</h3>
+            <p class="timeline-date">Saat kita mulai saling menyayangi</p>
+            <p>
+              Di antara banyaknya orang yang pernah hadir dalam hidupku, 
+              kamu adalah seseorang yang membuatku merasa paling nyaman. 
+              Kamu bukan sekadar seseorang yang aku sayang, tetapi juga rumah 
+              ternyaman tempat aku pulang ketika dunia terasa melelahkan. 
+              Bersamamu, aku bisa menjadi diriku sendiri tanpa harus berpura-pura 
+              kuat setiap saat. Ada bahagia yang sederhana saat bersamamu, 
+              ada tenang yang sulit aku temukan di tempat lain, dan ada rasa yang 
+              membuatku selalu ingin kembali kepadamu. Bahkan setelah kita melewati 
+              banyak hal dan akhirnya kembali bersama, aku semakin sadar betapa 
+              berharganya kehadiranmu dalam hidupku. Aku mungkin tidak selalu 
+              bisa menjadi pasangan yang sempurna, tetapi aku ingin kamu tahu 
+              bahwa kamu punya tempat istimewa di hatiku. Sejauh apa pun aku melangkah, 
+              sesibuk apa pun hariku, semoga kita selalu punya jalan untuk kembali 
+              satu sama lain. Karena bagiku, rumah bukan selalu tentang tempat, 
+              melainkan tentang seseorang yang membuat hati merasa pulang. 
+              Dan orang itu adalah kamu. ❤️
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot">♡</div>
+          <div class="timeline-card">
+            <div class="washi-tape"></div>
+            <span class="chapter">BAB 03 · KENANGAN</span>
+            <h3>Hari-hari yang ingin kuulang kembali</h3>
+            <p class="timeline-date">Tentang semua momen kita</p>
+            <p>
+              Setiap kali bertemu dengannya, aku selalu menyimpan setiap momen kita dalam ingatan. 
+              Mulai dari tawa, cerita kecil, hingga waktu sederhana yang kita habiskan 
+              bersama, semuanya terasa begitu berarti bagiku. Bahkan setelah kita 
+              berpisah, aku sering mengingat kembali momen-momen itu dan berharap 
+              bisa mengulanginya sekali lagi. Meski sekarang kita harus berjauhan dan 
+              menunggu waktu untuk bertemu kembali, aku akan selalu menyimpan kenangan 
+              kita sambil menghitung hari sampai akhirnya bisa melihatmu lagi, 
+              menghabiskan waktu bersama, dan menciptakan kenangan baru denganmu. ❤️
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot">♡</div>
+          <div class="timeline-card">
+            <div class="washi-tape"></div>
+            <span class="chapter">BAB 04 · TERUS BERTUMBUH</span>
+            <h3>Kita masih banyak belajar</h3>
+            <p class="timeline-date">Hari ini dan seterusnya</p>
+            <p>
+              Kita memang bukan dua orang yang selalu benar. Akan ada saatnya kita 
+              berbeda pendapat, salah paham, atau saling mengecewakan. 
+              Tapi aku berharap, apa pun masalah yang datang, kita bisa 
+              menyelesaikannya bersama tanpa saling meninggalkan. Aku ingin kita 
+              selalu memilih untuk saling mendengarkan, memperbaiki keadaan, dan 
+              menjaga kepercayaan satu sama lain. Sejauh apa pun jarak yang 
+              memisahkan kita, semoga kita tetap saling menjaga hati, tidak 
+              melibatkan orang ketiga, dan selalu menjadikan satu sama lain 
+              sebagai tempat untuk pulang dan menyelesaikan setiap masalah. ❤️
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="personal-note">
+        <span>♡</span>
+        <p>
+          "Aku tidak membutuhkan kisah yang selalu sempurna.
+          Aku hanya ingin kita sama-sama berusaha membuat kisah ini
+          menjadi sesuatu yang layak diperjuangkan." I love you Sayang nya aku❤️❤️
+        </p>
+      </div>
+      </div>
+    </section>
+
+    <!-- ROMANTIC DIVIDER 3 -->
+    <div class="romantic-divider">
+      <span class="divider-content">୨⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ 📷 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯୧</span>
+    </div>
+
+    <!-- MOMENTS (4 KALI PERTEMUAN LDR KITA) -->
+    <section class="moments-section section-pad" id="moments">
+      <div class="moments-wrapper">
+        <div class="section-heading">
+          <span class="eyebrow">♡ LDR JOURNEY · 4 KALI KITA BERTEMU ♡</span>
+          <h2>Saat <span>Kita Bersama.</span></h2>
+          <p>Meskipun terpisah jarak ribuan kilometer hingga luar pulau, 4 kali pertemuan tatap muka ini adalah momen yang paling indah dan selalu kurindukan.</p>
+        </div>
+
+        <div class="moments-stats-ribbon">
+          <div class="stat-pill">📍 <strong>4 Pertemuan</strong> Tatap Muka</div>
+          <div class="stat-pill">📸 <strong>35+ Foto</strong> Kenangan Indah</div>
+          <div class="stat-pill">🫂 <strong>Pelukan Hangat</strong> Yang Selalu Dirindukan</div>
+          <div class="stat-pill">❤️ <strong>1 Cinta</strong> Sofi & Zahro</div>
+        </div>
+
+      <div class="moments-grid">
+        <!-- [FOTO PERTEMUAN 01 - 4 Foto] -->
+        <article class="moment-card" data-desc="Momen awal saat kita bertatap muka langsung setelah sekian lama menahan rindu ini di balik layar. Deg-degan banget tapi bahagia banget bisa melihat senyuman dia dari dekat ❤️.">
+          <img src="momen-1.jpg"
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=700&q=85';"
+               alt="Pertemuan Pertama Sofi & Zahro">
+          <div class="moment-overlay">
+            <span>01 · PERTEMUAN PERTAMA</span>
+            <h3>Pertama Kali Menatapmu</h3>
+            <span class="moment-click-hint">📸 4 Foto · Klik buka ♡</span>
+          </div>
+
+          <!-- KOLEKSI FOTO PERTEMUAN 1 -->
+          <div class="moment-gallery-data" style="display: none;">
+            <img src="momen-1.jpg" alt="Pertemuan 1 - Foto 1">
+            <img src="momen-1-foto2.jpg" alt="Pertemuan 1 - Foto 2">
+            <img src="momen-1-foto3.jpg" alt="Pertemuan 1 - Foto 3">
+            <img src="momen-1-foto4.jpg" alt="Pertemuan 1 - Foto 4">
+          </div>
+        </article>
+
+        <!-- [FOTO PERTEMUAN 02 - 2 Foto] -->
+        <article class="moment-card" data-desc="Pertemuan kedua kita menjadi salah satu momen yang selalu kuingat. Aku mulai merasa semakin nyaman saat menghabiskan waktu bersamamu, tetapi di balik kenangan indah itu, ada kesalahan yang tanpa sengaja kulakukan. Aku sadar sikapku saat itu tidak seharusnya seperti itu, dan sampai sekarang aku masih merasa bersalah karena sudah menunjukkan sisi diriku yang mungkin membuatmu kecewa atau terluka. Aku tidak pernah berniat menyakitimu, apalagi membuatmu merasa tidak nyaman. Maaf karena saat itu aku belum bisa mengendalikan diriku dengan baik. Aku tahu rasa sayang saja tidak cukup tanpa sikap yang bisa membuatmu merasa aman dan dihargai. Aku benar-benar menyayangimu sayang ku, dan aku ingin belajar menjadi seseorang yang lebih baik untukmu. Aku tidak ingin kesalahan itu menjadi alasan untuk merusak hubungan yang begitu berarti bagiku. Aku ingin memperbaiki diri, belajar dari kesalahanku, dan membuktikan bahwa rasa sayangku kepadamu bukan hanya lewat kata-kata, tetapi juga melalui sikap dan perubahan yang nyata. ♡">
+          <img src="momen-2.jpeg"
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=700&q=85';"
+               alt="Pertemuan Kedua Sofi & Zahro">
+          <div class="moment-overlay">
+            <span>02 · PERTEMUAN KEDUA</span>
+            <h3>Makin Nyaman Bersamamu</h3>
+            <span class="moment-click-hint">📸 2 Foto · Klik buka ♡</span>
+          </div>
+
+          <!-- KOLEKSI FOTO PERTEMUAN 2 -->
+          <div class="moment-gallery-data" style="display: none;">
+            <img src="momen-2.jpeg" alt="Pertemuan 2 - Foto 1">
+            <img src="momen-2-foto2.jpeg" alt="Pertemuan 2 - Foto 2">
+          </div>
+        </article>
+
+        <!-- [FOTO PERTEMUAN 03 - 2 Foto] -->
+        <article class="moment-card" data-desc="Entah kenapa, setiap kali bersamamu, waktu terasa berjalan begitu cepat. Rasanya baru saja sampai dan mulai menikmati waktu berdua, tiba-tiba sudah waktunya untuk pulang. Bahkan rasa lelah yang biasanya kurasakan seolah menghilang begitu saja saat berada di dekatmu. Aku terlalu menikmati setiap detik bersamamu sampai terkadang lupa waktu. Rasanya aku selalu ingin lebih lama di sisimu, mendengar ceritamu, melihat senyummu, dan menikmati hal-hal sederhana yang kita lakukan bersama. Kalau boleh memilih, aku ingin waktu berjalan lebih lambat setiap kali bersamamu, karena bagiku, kebersamaan kita selalu terasa kurang, seberapa lama pun kita menghabiskan waktu bersama. ♡">
+          <img src="momen-3.jpg"
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=700&q=85';"
+               alt="Pertemuan Ketiga Sofi & Zahro">
+          <div class="moment-overlay">
+            <span>03 · PERTEMUAN KETIGA</span>
+            <h3>Waktu Terasa Begitu Cepat</h3>
+            <span class="moment-click-hint">📸 2 Foto · Klik buka ♡</span>
+          </div>
+
+          <!-- KOLEKSI FOTO PERTEMUAN 3 -->
+          <div class="moment-gallery-data" style="display: none;">
+            <img src="momen-3.jpg" alt="Pertemuan 3 - Foto 1">
+            <img src="momen-3-foto2.jpg" alt="Pertemuan 3 - Foto 2">
+          </div>
+        </article>
+
+        <!-- [FOTO PERTEMUAN 04 - 27 Foto Kenangan] -->
+        <article class="moment-card" data-desc="Pertemuan keempat ini menjadi pertemuan paling bahagia dari semua waktu yang pernah kita habiskan bersama. Apalagi kita bisa bertemu empat kali berturut-turut, rasanya bahagia banget bisa terus berada di dekatmu. Banyak foto dan kenangan indah yang tercipta di pertemuan ini, 
+        kenangan yang nantinya akan selalu aku lihat saat merindukanmu. 
+        Aku suka banget saat kamu manjain aku, perhatian sama aku, dan membuatku 
+        merasa begitu disayang. Bahkan rasa lelah yang kurasakan seolah hilang 
+        begitu saja setiap kali bersamamu. Aku terlalu bahagia sampai rasanya 
+        tidak ingin waktu cepat berlalu, karena kalau boleh memilih, aku ingin 
+        terus berada di sampingmu lebih lama, memelukmu lebih erat, dan menikmati 
+        setiap detik bersamamu. Di pertemuan ini juga aku merasa rasa sayangku ke 
+        kamu semakin besar, semakin yakin kalau kamu adalah seseorang yang 
+        benar-benar ingin aku jaga dan pertahankan. Rasanya masih kurang, 
+        aku masih ingin banyak waktu bersamamu, masih ingin membuat lebih 
+        banyak kenangan, dan masih ingin merasakan hangatnya pelukanmu 
+        setiap kali kita bertemu. Walaupun setelah ini kita harus kembali 
+        menjalani LDR dan menahan rindu sampai waktu mempertemukan kita lagi, 
+        semua kenangan ini akan selalu aku simpan baik-baik di hati. 
+        Aku akan selalu menantikan hari ketika aku bisa bertemu kamu lagi, 
+        memelukmu lagi, dan menghabiskan waktu bersamamu seperti kemarin. 
+        Terima kasih sudah membuat pertemuan ini begitu istimewa, 
+        sudah memanjakan aku, memperhatikan aku, dan membuatku merasa begitu 
+        bahagia. Aku bersyukur punya kamu, dan semoga kita bisa terus 
+        menciptakan banyak kenangan indah bersama sampai nanti kita tidak 
+        perlu lagi menghitung hari untuk bertemu. I love youuu sayang, 
+        lebih dari yang bisa aku ungkapkan lewat kata-kata. ♡❤️">
+          <img src="momen-4.jpg"
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1474552226712-ac0f0961a954?auto=format&fit=crop&w=700&q=85';"
+               alt="Pertemuan Keempat Sofi & Zahro">
+          <div class="moment-overlay">
+            <span>04 · PERTEMUAN KEEMPAT</span>
+            <h3>Pelukan Paling Hangat</h3>
+            <span class="moment-click-hint">📸 27 Foto · Klik buka ♡</span>
+          </div>
+
+          <!-- KOLEKSI BANYAK FOTO PERTEMUAN 4 (27 FOTO LENGKAP) -->
+          <div class="moment-gallery-data" style="display: none;">
+            <img src="momen-4-foto2.jpg" alt="Pertemuan 4 - Kenangan 1">
+            <img src="momen-4-foto3.jpg" alt="Pertemuan 4 - Kenangan 2">
+            <img src="momen-4-foto4.jpg" alt="Pertemuan 4 - Kenangan 3">
+            <img src="momen-4-foto5.jpg" alt="Pertemuan 4 - Kenangan 4">
+            <img src="momen-4-foto6.jpg" alt="Pertemuan 4 - Kenangan 5">
+            <img src="momen-4-foto7.jpg" alt="Pertemuan 4 - Kenangan 6">
+            <img src="momen-4-foto8.jpg" alt="Pertemuan 4 - Kenangan 7">
+            <img src="momen-4-foto9.jpg" alt="Pertemuan 4 - Kenangan 8">
+            <img src="momen-4-foto10.jpg" alt="Pertemuan 4 - Kenangan 9">
+            <img src="momen-4-foto11.jpg" alt="Pertemuan 4 - Kenangan 10">
+            <img src="momen-4-foto12.jpg" alt="Pertemuan 4 - Kenangan 11">
+            <img src="momen-4-foto13.jpg" alt="Pertemuan 4 - Kenangan 12">
+            <img src="momen-4-foto14.jpg" alt="Pertemuan 4 - Kenangan 13">
+            <img src="momen-4-foto15.jpg" alt="Pertemuan 4 - Kenangan 14">
+            <img src="momen-4-foto16.jpg" alt="Pertemuan 4 - Kenangan 15">
+            <img src="momen-4-foto17.jpg" alt="Pertemuan 4 - Kenangan 16">
+            <img src="momen-4-foto18.jpg" alt="Pertemuan 4 - Kenangan 17">
+            <img src="momen-4-foto19.jpg" alt="Pertemuan 4 - Kenangan 18">
+            <img src="momen-4-foto20.jpg" alt="Pertemuan 4 - Kenangan 19">
+            <img src="momen-4-foto21.jpg" alt="Pertemuan 4 - Kenangan 20">
+            <img src="momen-4-foto22.jpg" alt="Pertemuan 4 - Kenangan 21">
+            <img src="momen-4-foto23.jpg" alt="Pertemuan 4 - Kenangan 22">
+            <img src="momen-4-foto24.jpg" alt="Pertemuan 4 - Kenangan 23">
+            <img src="momen-4-foto25.jpg" alt="Pertemuan 4 - Kenangan 24">
+            <img src="momen-4-foto26.jpg" alt="Pertemuan 4 - Kenangan 25">
+            <img src="momen-4-foto27.jpg" alt="Pertemuan 4 - Kenangan 26">
+            <img src="momen-4-foto28.jpg" alt="Pertemuan 4 - Kenangan 27">
+          </div>
+        </article>
+      </div>
+
+      <p class="gallery-note">
+        💡 Klik salah satu dari 4 kartu pertemuan di atas untuk membuka galeri foto lengkapnya ya ♡
+      </p>
+      </div>
+    </section>
+
+    <!-- ROMANTIC DIVIDER 4 -->
+    <div class="romantic-divider">
+      <span class="divider-content">୨⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ 💖 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯୧</span>
+    </div>
+
+    <!-- REASONS WHY I LOVE YOU (TENTANG ZAHRO) -->
+    <section class="reasons-section section-pad" id="reasons">
+      <div class="reasons-wrapper">
+        <div class="section-heading">
+          <span class="eyebrow">♡ SPESIAL UNTUK CEWEKKU TERSAYANG ♡</span>
+          <h2>Kenapa Sofi <span>Sayang Banget Sama Zahro?</span></h2>
+          <p>
+            Bukan cuma karena kamu cantik, tapi ada banyak hal-hal kecil tentang kamu yang selalu berhasil bikin hatiku jatuh cinta berkali-kali.
+          </p>
+        </div>
+
+        <div class="reasons-grid">
+          <article class="reason-card">
+            <span class="reason-icon">🌸</span>
+            <span class="reason-badge">ALASAN 01</span>
+            <h3>Senyum Manis Zahro</h3>
+            <p>
+              Senyuman kamu itu obat paling ampuh buat Sofi. Setiap kali melihat senyum Zahro, baik di foto maupun waktu tatap muka langsung, semua capek dan penat di kepala langsung hilang seketika.
+            </p>
+          </article>
+
+          <article class="reason-card">
+            <span class="reason-icon">📞</span>
+            <span class="reason-badge">ALASAN 02</span>
+            <h3>Suara & Tawa di Telepon</h3>
+            <p>
+              Meskipun kita LDR dan terpisah pulau, mendengar suaramu bercerita dan tertawa sebelum tidur adalah momen yang paling kutunggu setiap hari. Suaramu selalu bikin hati tenang dan merasa dekat.
+            </p>
+          </article>
+
+          <article class="reason-card">
+            <span class="reason-icon">🫂</span>
+            <span class="reason-badge">ALASAN 03</span>
+            <h3>Hangatnya Pelukanmu</h3>
+            <p>
+              Empat kali kita bertemu, pelukan hangat Zahro selalu terasa seperti tempat teraman di dunia. Rasanya damai banget dan selalu bikin aku nggak mau cepat-cepat berpisah.
+            </p>
+          </article>
+
+          <article class="reason-card">
+            <span class="reason-icon">🥺</span>
+            <span class="reason-badge">ALASAN 04</span>
+            <h3>Tingkah Manja Kamu</h3>
+            <p>
+              Sofi suka banget pas kamu lagi manja, minta diperhatiin, dan cerita banyak hal kecil. Di mata Sofi, semua tingkah manjamu selalu jadi hal yang paling menggemaskan di dunia.
+            </p>
+          </article>
+
+          <article class="reason-card">
+            <span class="reason-icon">🤍</span>
+            <span class="reason-badge">ALASAN 05</span>
+            <h3>Ketulusan & Kesabaranmu</h3>
+            <p>
+              Terima kasih sudah begitu sabar menjalani hubungan jarak jauh ini, mau saling memaafkan kesalahanku, dan terus bertahan berjuang bersama menjaga komitmen kita.
+            </p>
+          </article>
+
+          <article class="reason-card">
+            <span class="reason-icon">🏡</span>
+            <span class="reason-badge">ALASAN 06</span>
+            <h3>Kamu Adalah Rumahku</h3>
+            <p>
+              Di antara banyaknya orang di dunia, hatiku cuma memilih Zahro. Aku sudah cukup bahagia denganmu dan nggak butuh orang lain. Kamu satu-satunya rumah tempatku pulang.
+            </p>
+          </article>
+        </div>
+
+        <div class="reasons-quote">
+          <span class="quote-heart">💌</span>
+          <p>"Terima kasih sudah menjadi perempuan terhebat dan termanis di hidupku. Aku beruntung banget punya kamu, Zahro. ♡"</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROMANTIC DIVIDER 5 -->
+    <div class="romantic-divider">
+      <span class="divider-content">୨⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ 🕊️ ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯୧</span>
+    </div>
+
+    <!-- FIGHTS -->
+    <section class="fights-section section-pad" id="fights">
+      <div class="fights-wrapper">
+        <div class="section-heading">
+          <span class="eyebrow">♡ RUANG KEDEWASAAN & SALING MENJAGA ♡</span>
+          <h2>Ketika kita <span>tidak baik-baik saja.</span></h2>
+          <p>
+            Cinta bukan berarti tidak pernah bertengkar. Cinta adalah tentang bagaimana kita tetap memilih bertahan dan menyelesaikan masalah bersama.
+          </p>
+        </div>
+
+      <div class="fight-list">
+        <details class="fight-card" open>
+          <summary>
+            <span class="fight-icon">🥺</span>
+            <span class="fight-title">
+              <strong>Saat kita saling menyakiti</strong>
+              <small>BAB · KESALAHPAHAMAN</small>
+            </span>
+            <span class="expand-icon">＋</span>
+          </summary>
+          <div class="fight-content">
+            <p>
+             Ada saatnya perkataan atau tindakan kita membuat satu sama lain 
+             kecewa. Mungkin ada hal yang tidak tersampaikan dengan baik, 
+             ada harapan yang tidak terpenuhi, atau ada perasaan yang sulit 
+             dijelaskan. Tapi aku percaya, setiap masalah yang datang adalah 
+             rintangan yang harus kita lewati bersama, bukan alasan untuk 
+             saling menyerah.
+            </p>
+            <p>
+              Aku sadar, saat marah, aku lebih sering memilih diam karena aku 
+              takut mengeluarkan kata-kata yang tidak pantas didengar dan 
+              justru menyakiti hatimu. Terkadang aku kesulitan mengungkapkan 
+              apa yang sebenarnya aku rasakan, jadi aku membutuhkan waktu 
+              untuk menenangkan diri sebelum bisa berbicara dengan baik. 
+              Aku harap kamu bisa memahami itu, bukan karena aku ingin 
+              mengabaikanmu, tetapi karena aku tidak ingin emosiku melukai 
+              seseorang yang sangat aku sayangi.
+            </p>
+            <p>
+                Aku tahu dalam hubungan kita, rasa cemburu, salah paham, 
+                dan perbedaan pendapat pasti akan ada. Bagiku, cemburu adalah 
+                salah satu perasaan yang bisa muncul karena rasa sayang dan 
+                takut kehilangan, tetapi aku juga ingin kita belajar untuk 
+                saling percaya dan memahami batasan satu sama lain. Aku ingin 
+                kita bisa membicarakan apa pun yang mengganggu hati kita tanpa 
+                harus saling menyakiti.
+            </p>
+            <p>
+                Jika suatu hari kita menghadapi masalah yang terasa berat, 
+                aku berharap kita tetap memilih untuk bertahan, 
+                saling mendengarkan, dan mencari jalan keluar bersama. 
+                Aku tidak ingin kita sibuk mencari siapa yang paling salah, 
+                melainkan belajar memahami perasaan satu sama lain agar 
+                kesalahan yang sama tidak terus terulang. Aku ingin kita 
+                sama-sama belajar menjadi lebih dewasa dalam menghadapi 
+                masalah, karena hubungan ini bukan tentang siapa yang 
+                selalu benar, tetapi tentang bagaimana kita tetap saling 
+                menggenggam meskipun keadaan sedang tidak baik-baik saja.
+            </p>
+            <p>
+                Aku sayang kamu, dan aku ingin kita melewati setiap rintangan 
+                bersama. Aku tidak berharap hubungan kita selalu berjalan mulus, 
+                aku hanya berharap kita tidak mudah menyerah ketika keadaan
+                 menjadi sulit. Selama kita masih mau saling memahami, 
+                 memperbaiki diri, dan menjaga kepercayaan, 
+                 aku ingin terus berjuang bersamamu. ♡
+            </p>
+            <span class="lesson">♡ PELAJARAN: Aku belajar bahwa setiap masalah harus kita selesaikan bersama dengan saling memahami, bukan saling menyakiti. Kita harus belajar mengendalikan emosi dan tetap bertahan menghadapi setiap rintangan.</span>
+          </div>
+        </details>
+
+        <details class="fight-card">
+          <summary>
+            <span class="fight-icon">💔</span>
+            <span class="fight-title">
+              <strong>Saat kepercayaan diuji</strong>
+              <small>BAB · KEPERCAYAAN & KEJUJURAN</small>
+            </span>
+            <span class="expand-icon">＋</span>
+          </summary>
+          <div class="fight-content">
+            <p>
+              Tidak semua masalah mudah dilupakan hanya karena kata maaf. 
+              Aku pernah merasa kecewa saat kamu melakukan hal yang membuatku 
+              cemburu, seperti saat kamu mengobrol dengan orang lain tanpa hal 
+              yang penting untuk dibicarakan. Di sisi lain, aku juga sadar 
+              bahwa aku pernah melakukan kesalahan besar dengan mengkhianati 
+              kepercayaanmu tanpa sepengetahuanmu. Aku tahu semua itu 
+              meninggalkan luka dan membuat kita sama-sama ragu.
+            </p>
+            <p>
+              Tapi sekarang, aku ingin kamu tahu bahwa aku sudah memaafkan 
+              kesalahanmu yang kemarin. Aku tidak ingin terus mengungkit masa 
+              lalu, karena aku sudah memilih untuk percaya lagi dan menyayangimu 
+              dengan sepenuh hatiku. Aku juga mulai menyadari betapa besar 
+              perjuanganmu untuk mempertahankan hubungan ini dan betapa tulusnya 
+              kamu menyayangiku. Maaf kalau selama ini aku belum sepenuhnya 
+              menyadari semua itu.
+            </p>
+            <p>
+              Aku ingin kita selalu jujur satu sama lain tentang apa pun yang 
+              terjadi, baik hal kecil maupun hal besar. Kalau ada sesuatu yang 
+              mengganggu pikiran, membuat cemburu, atau membuat hati kita tidak 
+              nyaman, aku ingin kita saling bercerita dan membicarakannya 
+              baik-baik, bukan menyembunyikannya atau membiarkan kesalahpahaman 
+              tumbuh di antara kita.
+            </p>
+            <p>
+              Aku ingin kamu juga percaya kepadaku, sayang. Aku tahu kepercayaan 
+              tidak bisa dipaksakan dan harus dibuktikan melalui tindakan nyata. 
+              Aku ingin kita sama-sama memperbaiki diri, menjaga hati, 
+              dan membuktikan bahwa masa lalu tidak harus menentukan masa depan 
+              kita. Aku sudah memilih kamu, aku percaya sama kamu, dan aku ingin 
+              terus bersama kamu. Aku ingin kita membangun hubungan yang lebih 
+              kuat, tanpa terus dihantui kesalahan yang sudah kita maafkan. 
+              Aku sayang banget sama kamu, dan aku ingin kita terus belajar 
+              untuk saling jujur, saling percaya, dan menjaga satu sama lain, 
+              bukan karena kita tidak pernah salah, tetapi karena kita sama-sama 
+              mau memperbaiki semuanya. ♡
+            </p>
+            <span class="lesson">♡ PELAJARAN: Aku belajar bahwa kepercayaan dibangun melalui kejujuran dan tindakan nyata. Aku ingin kita selalu terbuka satu sama lain, saling menjaga hati, dan tidak mengulangi kesalahan yang sama. ♡</span>
+          </div>
+        </details>
+
+        <details class="fight-card">
+          <summary>
+            <span class="fight-icon">🫂</span>
+            <span class="fight-title">
+              <strong>Saat kita memilih berdamai</strong>
+              <small>BAB · PENGAMPUNAN & MEMINTA MAAF</small>
+            </span>
+            <span class="expand-icon">＋</span>
+          </summary>
+          <div class="fight-content">
+            <p>
+              Meminta maaf bukan berarti semua rasa sakit langsung hilang. 
+              Memaafkan juga bukan berarti masalah harus dilupakan begitu saja. 
+              Kita perlu saling memberi ruang untuk menjelaskan, memperbaiki 
+              kesalahan, dan menunjukkan perubahan.
+            </p>
+            <p>
+              Aku ingat saat kita pernah bertengkar hebat sampai tidak ada yang mau 
+              mengalah. Saat itu, aku memilih diam untuk menenangkan diriku agar 
+              tidak semakin terbawa emosi. Setelah pikiranku lebih tenang, aku sadar 
+              bahwa aku salah, terutama karena perkataanku yang menyakitimu. 
+              Aku pun meminta maaf dengan tulus kepadamu. Begitu juga saat kamu 
+              melakukan kesalahan, kamu berusaha meminta maaf dengan tulus kepadaku. 
+              Dari situ aku belajar bahwa saling memaafkan bukan berarti mengakhiri 
+              hubungan, melainkan memberi kesempatan untuk memperbaiki diri dan 
+              mempertahankan hubungan yang kita sayangi.
+            </p>
+            <p>
+                Aku berharap setiap pertengkaran bisa membuat kita lebih dewasa. 
+                Bukan semakin takut kehilangan, tetapi semakin mengerti bagaimana 
+                caranya menyayangi tanpa terus melukai. Aku ingin kita selalu belajar 
+                mengalahkan ego, saling memahami, dan memperbaiki kesalahan bersama. 
+                Karena bagiku, hubungan ini bukan tentang siapa yang menang atau siapa 
+                yang salah, tetapi tentang bagaimana kita tetap memilih satu sama lain 
+                meskipun sedang menghadapi masalah. ♡
+            </p>
+            <span class="lesson">♡ PELAJARAN: Aku belajar bahwa dalam hubungan, ego harus dikalahkan dengan saling memahami dan memaafkan. Meminta maaf bukan tanda kalah, tetapi bukti bahwa kita saling menyayangi dan ingin memperbaiki hubungan bersama. ♡</span>
+          </div>
+        </details>
+
+        <details class="fight-card">
+          <summary>
+            <span class="fight-icon">🌷</span>
+            <span class="fight-title">
+              <strong>Harapan setelah semua masalah</strong>
+              <small>BAB · KITA YANG LEBIH BAIK</small>
+            </span>
+            <span class="expand-icon">＋</span>
+          </summary>
+          <div class="fight-content">
+            <p>
+              Aku tidak meminta kita menjadi pasangan yang tidak pernah
+              salah. Aku hanya berharap kita berani mengakui kesalahan,
+              saling menghormati, dan tidak berhenti memperbaiki hubungan.
+            </p>
+            <p>
+              Semoga kita bisa menciptakan hubungan yang membuat kita
+              merasa aman untuk bercerita, didengar ketika sedih, dan
+              dihargai bahkan ketika pendapat kita berbeda.
+            </p>
+            <span class="lesson">♡ PELAJARAN: Cinta harus dijaga oleh dua orang.</span>
+          </div>
+        </details>
+      </div>
+
+      <p class="gallery-note">
+        Setiap masalah yang kita lewati mengajarkan kita arti kepercayaan, 
+        kejujuran, dan saling memaafkan. Semoga dari semua yang telah terjadi, 
+        kita bisa terus belajar menjadi lebih baik dan menjaga hubungan ini 
+        dengan sepenuh hati. ♡
+      </p>
+      </div>
+    </section>
+
+    <!-- ROMANTIC DIVIDER 6 -->
+    <div class="romantic-divider">
+      <span class="divider-content">୨⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ 💌 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯୧</span>
+    </div>
+
+    <!-- LOVE LETTER -->
+    <section class="letter-section section-pad" id="letters">
+      <div class="letter-wrapper">
+        <div class="section-heading">
+          <span class="eyebrow">♡ SURAT DARI LUBUK HATI SOFI ♡</span>
+          <h2>Untuk <span>Cewek Favoritku.</span></h2>
+          <p>Ada sesuatu yang ingin kusampaikan dari lubuk hati terdalam, khusus untuk kamu, Zahro sayang.</p>
+        </div>
+
+        <div class="letter-envelope">
+          <!-- AIRMAIL VINTAGE HEADER ACCENTS -->
+          <div class="envelope-top-bar">
+            <span class="airmail-tag">✈️ SPECIAL LDR AIRMAIL · FROM SOFI TO ZAHRO</span>
+            <span class="airmail-code">NO. 25-06-2024</span>
+          </div>
+
+          <div class="wax-seal-badge">
+            <span>♡</span>
+          </div>
+
+          <p class="letter-to">Teruntuk Zahro Sayangku ☺️♡</p>
+
+          <div class="letter-preview">
+            <p>
+              Hai, Sayangnya aku ☺️. ♡
+            </p>
+            <p>
+              Terima kasih sudah menjadi bagian terindah dari hidupku dan sudah begitu sabar menjalani hubungan jarak jauh ini bersamaku. Aku merasa beruntung banget bisa memiliki kamu, seseorang yang begitu aku sayangi dan aku percaya. Meskipun kita LDR dan baru empat kali bertemu langsung, rasa sayang Sofi ke Zahro nggak pernah berkurang sedikit pun.
+            </p>
+            <p>
+              Sayang, aku mau kamu tahu kalau aku sudah cukup bahagia dengan kamu. Aku nggak mau mencari perempuan lain, karena hatiku sudah memilih kamu. Aku ingin terus sama kamu, menjaga hubungan ini, dan membuktikan kalau keseriusanku bukan cuma lewat kata-kata, tetapi juga lewat sikapku.
+            </p>
+            <p>
+              Aku juga berharap kamu nggak terlalu banyak memikirkan hal-hal yang membuatmu takut kehilangan aku, yaa. Jangan selalu khawatir kalau suatu saat aku bakal pergi meninggalkan kamu. Aku di sini bukan untuk singgah sebentar, lalu pergi begitu saja. Aku ingin tetap ada di sampingmu, melewati hari-hari baik maupun buruk bersama kamu, sampai nanti kita punya kesempatan untuk lebih dekat dan nggak perlu terus-terusan menahan rindu karena jarak.
+            </p>
+            <p>
+              Terima kasih sudah selalu ada di setiap kabar, telepon, candaan, dan cerita kita. Aku percaya sama kamu, sayang, dan aku ingin kita terus saling percaya, saling menjaga hati, serta belajar menjadi lebih baik bersama. Aku tahu hubungan kita nggak selalu mudah, tetapi aku ingin kita tetap memilih satu sama lain setiap kali ada masalah.
+            </p>
+            <p>
+              Jadi, jangan terlalu takut, yaa, sayang. Aku sudah sayang banget sama kamu, dan aku bersyukur bisa memiliki kamu di hidupku. Semoga rasa sayang dan kepercayaan ini terus kita jaga sampai kelak jarak bukan lagi penghalang, sampai aku bisa bertemu kamu kapan pun aku rindu, dan sampai kita bisa membangun masa depan yang selama ini kita harapkan.
+            </p>
+            <p>
+              Terima kasih sudah hadir di hidupku ya sayang nya aku. Aku beruntung banget punya kamu. I love you so much, sayangku. ♡
+            </p>
+            <p class="letter-sign">Dengan penuh cinta, <br> Sofi ♡</p>
+          </div>
+
+          <button class="btn btn-primary btn-open-letter" id="letterBtn">
+            Buka surat lengkap 💌
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROMANTIC DIVIDER 7 -->
+    <div class="romantic-divider">
+      <span class="divider-content">୨⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ 🧸 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯୧</span>
+    </div>
+
+    <!-- INTERACTIVE VIRTUAL HUG / EMERGENCY LOVE BUTTON -->
+    <section class="hug-section section-pad" id="hugSection">
+      <div class="hug-card">
+        <span class="hug-badge">♡ TOMBOL DARURAT RINDU SOFI ♡</span>
+        <h2>Lagi Kangen Banget <span>Sama Sofi?</span></h2>
+        <p>
+          Kapan pun kamu ngerasa rindu, sedih, atau butuh dipeluk di saat kita lagi terpisah jarak, tekan tombol di bawah ini ya sayang! Sofi selalu ada buat kamu.
+        </p>
+
+        <button class="btn-hug" id="hugBtn">
+          <span class="hug-btn-icon">🧸</span>
+          <span class="hug-btn-text">Ambil Pelukan Virtual Dari Sofi ♡</span>
+        </button>
+
+        <!-- Pesan Cinta Dinamis Pop-up -->
+        <div class="hug-message-box" id="hugMessageBox" style="display: none;">
+          <div class="hug-message-bubble">
+            <span class="hug-quote-mark">“</span>
+            <p id="hugMessageText">Peluk erat dari jauh buat cewek tersayangku! Sabar ya sayang, rindu ini bakal segera terbayar lunas pas kita ketemu lagi ♡</p>
+            <span class="hug-sender">— Pelukan hangat dari Sofi untuk Zahro ♡</span>
+          </div>
+        </div>
+
+        <div class="hug-counter-badge" id="hugCounterBadge">
+          💖 Zahro sudah mengambil pelukan Sofi sebanyak <strong id="hugCount">1</strong> kali ♡
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final-section">
+      <div class="final-wrapper">
+        <span class="final-heart">♡</span>
+        <p class="eyebrow">♡ CERITA KITA MASIH BERLANJUT ♡</p>
+        <h2>Belum selesai,<br><span>masih ada kita.</span></h2>
+        <p>
+          Selama kita masih mau belajar, saling menghormati,
+          dan berusaha bersama, jarak kilometer bukanlah alasan untuk kita menyerah.
+          Terima kasih sudah menjadi kisah favorit dan anugerah terindah di hidupku, Zahro.
+        </p>
+        <a href="#home" class="btn btn-primary">Kembali ke awal ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FLOATING MUSIC PLAYER PILL (Bisa putar/jeda dari mana saja di website) -->
+  <div class="floating-music-widget" id="floatingMusicWidget">
+    <button class="music-float-btn" id="musicFloatBtn" aria-label="Putar atau Jeda Lagu">
+      <span class="float-disc" id="floatDisc">♫</span>
+      <div class="float-text">
+        <span class="float-status" id="floatStatus">Lagu Kita</span>
+        <strong class="float-title">Anugerah Terindah</strong>
+      </div>
+      <span class="float-state-icon" id="floatStateIcon">▶</span>
+    </button>
+  </div>
+
+  <footer>
+    <p>Dibuat dengan ♡ untuk Sofi & Zahro.</p>
+    <p>© <span id="year"></span> · Sofi Love Zahro ♡</p>
+  </footer>
+
+  <!-- MODAL SURAT -->
+  <div class="modal" id="letterModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal" aria-label="Tutup">×</button>
+      <span class="eyebrow">KHUSUS UNTUKMU</span>
+      <h2>Hai, <span>Cewekku tersayang.</span> ♡</h2>
+      <div id="fullLetter">
+        <p>
+          Untuk Cewekku tersayang, kalau kamu sedang membaca ini, aku ingin kamu tahu betapa berartinya kehadiranmu dalam hidupku. Menjalani LDR memang tidak selalu mudah, ada rasa rindu yang berat dan jarak kilometer yang memisahkan kita bahkan sampai luar pulau.
+        </p>
+        <p>
+          Namun, 4 kali pertemuan kita kemarin membuktikan bahwa setiap lelah dan rindu selalu terbayar lunas saat melihatmu secara langsung. Setiap detik saat kita bersama adalah kenangan terindah yang selalu ingin kuulang.
+        </p>
+        <p>
+          Aku tidak bisa menjanjikan bahwa setiap hari akan selalu sempurna. Namun, aku berjanji akan terus berusaha menjadi yang terbaik, menjaga kejujuran, dan setia hanya untuk kamu.
+        </p>
+        <p>
+          Semoga kita bisa segera bertemu untuk pertemuan ke-5, ke-6, dan seterusnya, sampai kelak kita tidak perlu berpisah jarak lagi.
+        </p>
+        <p class="letter-sign">Sofi sayang Zahro selalu. ♡</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL GALERI PERTEMUAN (BANYAK FOTO) -->
+  <div class="modal" id="galleryModal" aria-hidden="true">
+    <div class="modal-content modal-gallery">
+      <button class="modal-close" id="closeGalleryModal" aria-label="Tutup">×</button>
+      <span class="eyebrow" id="galleryCategory">GALERI KENANGAN</span>
+      <h2 id="galleryTitle">Saat <span>Kita Bersama</span> ♡</h2>
+      <p id="galleryDesc" class="gallery-desc">Koleksi foto pada pertemuan ini ♡</p>
+
+      <div class="gallery-photos-grid" id="galleryPhotosGrid">
+        <!-- Foto otomatis di-render dari kartu momen yang diklik -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL LIGHTBOX (ZOOM FOTO FULL BESAR) -->
+  <div class="modal" id="lightboxModal" aria-hidden="true">
+    <div class="modal-content modal-lightbox">
+      <button class="modal-close" id="closeLightboxModal" aria-label="Tutup">×</button>
+      <div class="lightbox-frame">
+        <span class="lightbox-top-tag">🎀 SOFI & ZAHRO · KENANGAN INDAH 🎀</span>
+        <img id="lightboxImg" src="" alt="Foto Kenangan Sofi & Zahro">
+        <p class="lightbox-caption" id="lightboxCaption">Momen manis bersama Zahro sayang ♡</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- [AUDIO MUSIK]: Otomatis memutar lagu Anugerah Terindah -->
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="anugerah terindah.mp3" type="audio/mpeg">
+    <source src="anugerah terindah.mpeg" type="audio/mpeg">
+    <source src="lagu.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="main.js"></script>
+</body>
+</html>
